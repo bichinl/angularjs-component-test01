@@ -11,3 +11,7 @@ A component is basically a directive that uses a simpler configuration and that 
 
 
 > Info from: [Build an Angular 1.5 component – An AngularJS tutorial](https://tests4geeks.com/tutorials/build-angular-1-5-component-angularjs-tutorial/)
+
+-
+
+> Dependency management: [Bower](https://bower.io/)

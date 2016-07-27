@@ -1,0 +1,24 @@
+{
+  "name": "angularjs-component-test01",
+  "description": "Making a simple AngularJS component for testing purposes",
+  "main": "index.html",
+  "keywords": [
+    "AngularJS",
+    "component"
+  ],
+  "authors": [
+    "Sam M de O"
+  ],
+  "license": "MIT",
+  "homepage": "",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "angular": "^1.5.8"
+  }
+}
