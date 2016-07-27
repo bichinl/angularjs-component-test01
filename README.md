@@ -15,3 +15,5 @@ A component is basically a directive that uses a simpler configuration and that 
 -
 
 > Dependency management: [Bower](https://bower.io/)
+
+> NodeJS Dependencies [NodeJS](https://nodejs.org/en/)
