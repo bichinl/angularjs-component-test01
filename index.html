@@ -9,9 +9,17 @@
 <body ng-app="App">
 	<h1>AngularJS - Component Test 01</h1>
 
-	<test01 title="it work!"></test01>
+	<div ng-controller="MainController as mainCtrl">
+
+		<h2>{{mainCtrl.mainTitle}}</h2>
+
+		<test01 title="mainCtrl.mainTitle"></test01>
+
+	</div>
 
 	<script src="bower_components/angular/angular.min.js"></script>
+	<script src="bower_components/angular-css/angular-css.min.js"></script>
 	<script src="js/app.js"></script>
+	<script src="js/components/test01/test01.component.js"></script>
 </body>
 </html>
