@@ -1,0 +1,129 @@
+
+$header-bg: #fcac2f;
+$header-color: white;
+$header-height: 50px;
+$border-radius: 5px;
+
+/* Add Animation */
+@-webkit-keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top: 0; opacity:1}
+}
+
+@keyframes animatetop {
+	from {top:-300px; opacity:0}
+	to {top: 0; opacity:1}
+}
+
+.pt-modal {
+	display: none; /* Hidden by default */
+	position: fixed; /* Stay in place */
+	z-index: 1; /* Sit on top */
+	left: 0;
+	top: 0;
+	width: 100%; /* Full width */
+	height: 100%; /* Full height */
+	overflow: auto; /* Enable scroll if needed */
+	background-color: rgb(0,0,0); /* Fallback color */
+	background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+
+	&.show {
+		display: block;
+	}
+
+	/* Modal Content/Box */
+	.pt-modal-content {
+		position: relative;
+		background-color: #fefefe;
+		margin: 5% auto;
+		//padding: 0;
+		width: 70%;
+		animation-name: animatetop;
+		animation-duration: 0.4s;
+		border-radius: $border-radius;
+		box-shadow: 0 5px 15px rgba(0,0,0,0.4);
+
+		&.small{
+			width: 30%;
+		}
+		&.medium{
+			width: 60%;
+		}
+		&.large{
+			width: 85%;
+		}
+
+		.pt-modal-content-header{
+			border-top-left-radius: $border-radius;
+			border-top-right-radius: $border-radius;
+			//padding: 10px;
+			background: $header-bg;
+			color: #fff;
+			position: relative;
+			height: $header-height;
+
+			.title{
+				border-top-left-radius: 5px;
+				font-weight: bold;
+				//height: 100px;
+				//line-height: 100px;
+				position: absolute;
+				left: 10px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: block;
+				color: $header-color;
+			}
+
+			span.close-btn{
+				position: absolute;
+				right: 15px;
+				top: 50%;
+				transform: translateY(-50%);
+				display: block;
+				width: 15px;
+				height: 15px;
+				//background-image: url('../assets/images/grey_close_x.svg');
+
+				background-color: rgba(white, 0.5);
+				-webkit-mask-image: url(assets/grey_close_x.svg);
+				mask-image: url(assets/grey_close_x.svg);
+
+				cursor: pointer;
+
+				&:hover{
+					background-color: #ffffff;
+				}
+			}
+
+		}
+
+		.pt-modal-content-body {
+			padding: 20px;
+		}
+
+		.pt-modal-content-footer{
+			padding: 10px;
+			background: #e6e6e6;
+			text-align: right;
+			border-bottom-left-radius: $border-radius;
+			border-bottom-right-radius: $border-radius;
+
+			button.pt-button{
+				padding: 10px 18px;
+				border: 0px;
+				background: #cccccc;
+				font-size: 0.85em;
+				border-radius: $border-radius;
+				cursor: pointer;
+				&:hover{
+					background: #BABABA;
+				}
+			}
+
+
+		}
+
+	}
+}

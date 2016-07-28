@@ -1,0 +1,101 @@
+/* Add Animation */
+@-webkit-keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+@keyframes animatetop {
+  from {
+    top: -300px;
+    opacity: 0; }
+  to {
+    top: 0;
+    opacity: 1; } }
+
+.pt-modal {
+  display: none;
+  /* Hidden by default */
+  position: fixed;
+  /* Stay in place */
+  z-index: 1;
+  /* Sit on top */
+  left: 0;
+  top: 0;
+  width: 100%;
+  /* Full width */
+  height: 100%;
+  /* Full height */
+  overflow: auto;
+  /* Enable scroll if needed */
+  background-color: black;
+  /* Fallback color */
+  background-color: rgba(0, 0, 0, 0.4);
+  /* Black w/ opacity */
+  /* Modal Content/Box */ }
+  .pt-modal.show {
+    display: block; }
+  .pt-modal .pt-modal-content {
+    position: relative;
+    background-color: #fefefe;
+    margin: 5% auto;
+    width: 70%;
+    animation-name: animatetop;
+    animation-duration: 0.4s;
+    border-radius: 5px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4); }
+    .pt-modal .pt-modal-content.small {
+      width: 30%; }
+    .pt-modal .pt-modal-content.medium {
+      width: 60%; }
+    .pt-modal .pt-modal-content.large {
+      width: 85%; }
+    .pt-modal .pt-modal-content .pt-modal-content-header {
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+      background: #fcac2f;
+      color: #fff;
+      position: relative;
+      height: 50px; }
+      .pt-modal .pt-modal-content .pt-modal-content-header .title {
+        border-top-left-radius: 5px;
+        font-weight: bold;
+        position: absolute;
+        left: 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        color: white; }
+      .pt-modal .pt-modal-content .pt-modal-content-header span.close-btn {
+        position: absolute;
+        right: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        display: block;
+        width: 15px;
+        height: 15px;
+        background-color: rgba(255, 255, 255, 0.5);
+        -webkit-mask-image: url(assets/grey_close_x.svg);
+        mask-image: url(assets/grey_close_x.svg);
+        cursor: pointer; }
+        .pt-modal .pt-modal-content .pt-modal-content-header span.close-btn:hover {
+          background-color: #ffffff; }
+    .pt-modal .pt-modal-content .pt-modal-content-body {
+      padding: 20px; }
+    .pt-modal .pt-modal-content .pt-modal-content-footer {
+      padding: 10px;
+      background: #e6e6e6;
+      text-align: right;
+      border-bottom-left-radius: 5px;
+      border-bottom-right-radius: 5px; }
+      .pt-modal .pt-modal-content .pt-modal-content-footer button.pt-button {
+        padding: 10px 18px;
+        border: 0px;
+        background: #cccccc;
+        font-size: 0.85em;
+        border-radius: 5px;
+        cursor: pointer; }
+        .pt-modal .pt-modal-content .pt-modal-content-footer button.pt-button:hover {
+          background: #BABABA; }

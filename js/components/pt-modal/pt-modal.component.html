@@ -1,0 +1,20 @@
+<!-- <h1>Test Component</h1>
+<h2>Some info about this test component</h2>
+<p>Dynamic data: <b>{{$ctrl.title}}</b></p>
+<p>To lower case: {{$ctrl.lowerCaseString($ctrl.title)}}</p>
+<p>To upper case: {{$ctrl.upperCaseString($ctrl.title)}}</p> -->
+
+<div class="pt-modal" ng-class="{'show': $ctrl.showModal}">
+	<div class="pt-modal-content" ng-class="$ctrl.modalSize">
+		<div class="pt-modal-content-header">
+			<span class="close-btn" ng-click="$ctrl.showModal = !$ctrl.showModal"></span>
+			<div class="title">{{$ctrl.title}}</div>
+		</div>
+		<div class="pt-modal-content-body">
+			<h1>Modal size: {{$ctrl.modalSize}}</h1>
+		</div>
+		<div class="pt-modal-content-footer">
+			<button class="pt-button" ng-click="$ctrl.showModal = !$ctrl.showModal">Close</button>
+		</div>
+	</div>
+</div>

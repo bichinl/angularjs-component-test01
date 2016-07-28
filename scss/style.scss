@@ -3,4 +3,12 @@ $main-color: #272727;
 
 body{
 	color: $main-color;
+	font-family: 'Roboto', sans-serif;
+}
+
+p {
+	color: white;
+	background: #ccc;
+	padding: 10px;
+	border-radius: 4px;
 }
