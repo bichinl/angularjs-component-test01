@@ -1,18 +1,22 @@
 angular
 	.module('App')
-	.component('test01', TestComponent() );
+	.component('ptModal', PTModalComponent() );
 
-function TestComponent() {
+function PTModalComponent() {
 	var component = {
-		templateUrl: 'js/components/test01/test01.component.html',
-		css: 'js/components/test01/test01.component.css',
-		bindings: {title: '='},
-		controller: TestComponentController,
+		templateUrl: 'js/components/pt-modal/pt-modal.component.html',
+		css: 'js/components/pt-modal/pt-modal.component.css',
+		bindings: {
+			title: '=',
+			showModal: '=',
+			modalSize: '@'
+		},
+		controller: PTModalComponentController,
 	};
 
 	return component;
 
-	function TestComponentController(){
+	function PTModalComponentController(){
 		var vm = this;
 		vm.myName = 'Sam';
 
